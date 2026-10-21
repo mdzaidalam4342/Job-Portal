@@ -1,0 +1,150 @@
+.job-card {
+  background-color: white;
+  padding: 22px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  transition: 0.2s;
+}
+
+.job-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.job-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.days-ago {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.bookmark-btn {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #e5e7eb;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.bookmark-btn:hover {
+  background-color: #f1f5f9;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.company-logo {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2563eb;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.company-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.company-info h3 {
+  margin: 0;
+  font-size: 17px;
+  color: #1e293b;
+}
+
+.company-info p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.job-info h2 {
+  margin: 0 0 8px;
+  font-size: 19px;
+  color: #0f172a;
+}
+
+.job-info p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.job-tags {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.job-tags span {
+  padding: 5px 9px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+  background-color: #f8fafc;
+}
+
+.position {
+  color: #2563eb;
+}
+
+.job-type {
+  color: #f0442e;
+}
+
+.salary {
+  color: #7209b7;
+}
+
+.job-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.details-btn,
+.save-btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.details-btn {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  color: #334155;
+}
+
+.details-btn:hover {
+  background-color: #f8fafc;
+}
+
+.save-btn {
+  background-color: #2563eb;
+  border: 1px solid #2563eb;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #1d4ed8;
+}

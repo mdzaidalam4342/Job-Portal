@@ -1,0 +1,59 @@
+.student-jobs-page {
+    min-height: calc(100vh - 70px);
+    background-color: #f8fafc;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.student-jobs-page h1 {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.student-jobs-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.student-jobs-message {
+    max-width: 1200px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.student-jobs-message p {
+    font-size: 17px;
+    color: #64748b;
+}
+
+@media (max-width: 1000px) {
+
+    .student-jobs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .student-jobs-page {
+        padding: 25px 15px;
+    }
+
+    .student-jobs-page h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .student-jobs-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+}

@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+
+.home-content {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.home-content h1 {
+  font-size: 35px;
+  color: #222;
+}
+
+.home-content p {
+  color: #666;
+  font-size: 18px;
+}

@@ -1,0 +1,54 @@
+.filter-card {
+  width: 100%;
+  background-color: white;
+  padding: 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.filter-card h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.filter-card hr {
+  margin: 14px 0 18px;
+  border: none;
+  border-top: 1px solid #e2e8f0;
+}
+
+.filter-group {
+  margin-bottom: 22px;
+}
+
+.filter-group h3 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  color: #0f172a;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.filter-option input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #2563eb;
+}
+
+.filter-option label {
+  font-size: 14px;
+  color: #475569;
+  cursor: pointer;
+}
+
+.filter-option label:hover {
+  color: #2563eb;
+}

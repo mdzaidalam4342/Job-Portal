@@ -1,0 +1,64 @@
+.create-company {
+    min-height: 100vh;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.company-box {
+    width: 100%;
+    max-width: 550px;
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.company-box h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.company-box p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.company-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.company-box input,
+.company-box textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.company-box textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.company-box button {
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #f83002;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.company-box button:disabled {
+    background: #999;
+    cursor: not-allowed;
+}

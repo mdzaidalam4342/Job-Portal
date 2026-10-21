@@ -1,0 +1,74 @@
+.applications-page {
+    min-height: calc(100vh - 70px);
+    padding: 35px 6%;
+    background: #f7f7f7;
+    box-sizing: border-box;
+}
+
+.applications-page h1 {
+    margin: 25px 0;
+    color: #222;
+}
+
+.applications-back {
+    padding: 10px 15px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.applications-job-info,
+.applicant-card {
+    background: white;
+    padding: 22px;
+    margin-bottom: 18px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.applications-job-info h2,
+.applicant-card h3 {
+    margin-top: 0;
+}
+
+.applications-job-info p,
+.applicant-card p {
+    color: #555;
+    overflow-wrap: anywhere;
+}
+
+.applicant-card a {
+    color: #2563eb;
+}
+
+.applicant-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.applicant-actions button {
+    padding: 9px 16px;
+    border: none;
+    border-radius: 5px;
+    background: #16a34a;
+    color: white;
+    cursor: pointer;
+}
+
+.applicant-actions .reject-applicant {
+    background: #dc2626;
+}
+
+.applicant-actions button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .applications-page {
+        padding: 20px 15px;
+    }
+}

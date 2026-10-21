@@ -1,0 +1,40 @@
+.profile-page {
+  min-height: calc(100vh - 70px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f8f9fa;
+}
+
+.profile-card {
+  width: 400px;
+
+  padding: 35px;
+
+  background-color: white;
+
+  text-align: center;
+
+  border-radius: 10px;
+
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.profile-large {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.profile-card h1 {
+  margin-bottom: 5px;
+}
+
+.profile-card p {
+  color: #666;
+}

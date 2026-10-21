@@ -1,0 +1,169 @@
+
+.latest-jobs-section {
+    width: 100%;
+    padding: 85px 6%;
+    box-sizing: border-box;
+    background: #f8faff;
+}
+
+.latest-jobs-container { width: 100%; max-width: 1240px; margin: 0 auto; }
+
+.latest-jobs-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 38px;
+}
+
+.latest-jobs-eyebrow {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #4569d8;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.latest-jobs-heading h2 {
+    margin: 0 0 13px;
+    color: #14213d;
+    font-size: clamp(29px, 3.5vw, 42px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1.4px;
+}
+
+.latest-jobs-heading h2 span { color: #4566e8; }
+.latest-jobs-heading p { max-width: 570px; margin: 0; color: #77839a; font-size: 15px; line-height: 1.8; }
+
+.latest-jobs-view-all,
+.latest-jobs-bottom-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    flex-shrink: 0;
+    color: #3563dc;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.latest-jobs-view-all:hover,
+.latest-jobs-bottom-link:hover { color: #6045d8; gap: 13px; }
+
+.latest-jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 23px;
+    align-items: stretch;
+}
+
+.job-skeleton {
+    min-width: 0;
+    min-height: 250px;
+    padding: 24px;
+    box-sizing: border-box;
+    border: 1px solid #e9edf6;
+    border-radius: 19px;
+    background: #fff;
+    box-shadow: 0 6px 22px rgba(25, 45, 90, 0.035);
+}
+
+.skeleton-line {
+    border-radius: 8px;
+    background: linear-gradient(90deg, #edf1f8 25%, #f7f8fc 50%, #edf1f8 75%);
+    background-size: 200% 100%;
+    animation: skeletonShimmer 1.5s infinite;
+}
+
+.skeleton-title { width: 72%; height: 22px; margin-bottom: 24px; }
+.skeleton-company { width: 48%; height: 15px; margin-bottom: 30px; }
+.skeleton-description { width: 100%; height: 42px; margin-bottom: 25px; }
+.skeleton-tags { width: 80%; height: 27px; }
+
+@keyframes skeletonShimmer {
+    from { background-position: 100% 0; }
+    to { background-position: -100% 0; }
+}
+
+.latest-jobs-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+    padding: 35px 20px;
+    box-sizing: border-box;
+    border: 1px dashed #d9e2f2;
+    border-radius: 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.latest-jobs-message-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background: #edf3ff;
+    color: #3b64db;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.latest-jobs-message h3 { margin: 0 0 9px; color: #1c2944; font-size: 20px; }
+.latest-jobs-message p { margin: 0; color: #77839a; font-size: 14px; line-height: 1.7; }
+
+.latest-jobs-retry {
+    margin-top: 20px;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 9px;
+    background: #3563e9;
+    color: #fff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.latest-jobs-retry:hover { background: #264fc8; }
+
+.latest-jobs-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 32px;
+    padding-top: 22px;
+    border-top: 1px solid #e5eaf3;
+    color: #8490a5;
+    font-size: 13px;
+}
+
+.latest-jobs-bottom strong { color: #263654; }
+
+@media (max-width: 1000px) {
+    .latest-jobs-section { padding: 70px 5%; }
+    .latest-jobs-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+}
+
+@media (max-width: 650px) {
+    .latest-jobs-section { padding: 55px 18px; }
+    .latest-jobs-heading { align-items: flex-start; flex-direction: column; gap: 18px; margin-bottom: 27px; }
+    .latest-jobs-heading h2 { font-size: 31px; letter-spacing: -0.9px; }
+    .latest-jobs-heading p { font-size: 14px; }
+    .latest-jobs-grid { grid-template-columns: minmax(0, 1fr); gap: 17px; }
+    .latest-jobs-bottom { align-items: flex-start; flex-direction: column; gap: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .skeleton-line { animation: none; }
+    .latest-jobs-view-all, .latest-jobs-bottom-link { transition: none; }
+}

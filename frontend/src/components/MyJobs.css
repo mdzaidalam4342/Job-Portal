@@ -1,0 +1,90 @@
+
+.my-jobs-page {
+    min-height: calc(100vh - 70px);
+    padding: 35px 6%;
+    background: #f7f7f7;
+}
+
+.my-jobs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.my-jobs-header h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #222;
+}
+
+.my-jobs-page button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #f83002;
+    color: white;
+    cursor: pointer;
+}
+
+.my-jobs-list {
+    display: grid;
+    gap: 18px;
+}
+
+.my-job-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 24px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.my-job-details h2 {
+    margin: 0 0 10px;
+    color: #222;
+}
+
+.my-job-details p {
+    margin: 7px 0;
+    color: #666;
+}
+
+.my-job-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.my-jobs-page button.delete-job-button {
+    background: #dc2626;
+}
+
+.my-jobs-message,
+.my-jobs-empty {
+    padding: 35px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+}
+
+.my-jobs-empty h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 750px) {
+    .my-job-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .my-jobs-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

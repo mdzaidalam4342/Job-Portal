@@ -1,0 +1,227 @@
+
+.category-section {
+    width: 100%;
+    padding: 75px 6%;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.category-container { width: 100%; max-width: 1240px; margin: 0 auto; }
+
+.category-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.category-eyebrow {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #4569d8;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+}
+
+.category-heading h2 {
+    margin: 0 0 12px;
+    color: #17233e;
+    font-size: clamp(29px, 3.3vw, 40px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1.2px;
+}
+
+.category-heading h2 span { color: #4968e8; }
+.category-heading p { margin: 0; color: #7a879d; font-size: 14px; line-height: 1.8; }
+.category-controls { display: flex; gap: 10px; flex-shrink: 0; }
+
+.carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    padding: 0;
+    border: 1px solid #e4e9f3;
+    border-radius: 13px;
+    background: #fff;
+    color: #263653;
+    font-size: 21px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.carousel-button:hover {
+    transform: translateY(-2px);
+    border-color: #4268e8;
+    background: #4268e8;
+    color: #fff;
+}
+
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.category-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 228px;
+    padding: 24px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid #e8edf6;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #fff, #fafbff);
+    box-shadow: 0 5px 20px rgba(28, 48, 92, 0.035);
+    text-align: left;
+    font-family: inherit;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.category-card::after {
+    content: "";
+    position: absolute;
+    top: -48px;
+    right: -40px;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background: var(--category-tint);
+    opacity: 0.45;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--category-border);
+    box-shadow: 0 17px 36px rgba(35, 58, 115, 0.09);
+}
+
+.category-card:hover::after { transform: scale(1.25); }
+
+.category-blue { --category-tint: #dce8ff; --category-border: #bfd0ff; --category-icon-bg: #eaf0ff; --category-icon-color: #4167dd; }
+.category-purple { --category-tint: #e8ddff; --category-border: #d5c5ff; --category-icon-bg: #f0eaff; --category-icon-color: #8051d8; }
+.category-green { --category-tint: #d8f5e7; --category-border: #b9e9d0; --category-icon-bg: #e2f8ed; --category-icon-color: #218b62; }
+.category-orange { --category-tint: #ffead4; --category-border: #ffd7ad; --category-icon-bg: #fff0df; --category-icon-color: #c9782d; }
+.category-pink { --category-tint: #ffe0ed; --category-border: #ffc7df; --category-icon-bg: #ffebf3; --category-icon-color: #cb4f8a; }
+
+.category-card-top {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 23px;
+}
+
+.category-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border: 1px solid var(--category-border);
+    border-radius: 16px;
+    background: var(--category-icon-bg);
+    font-size: 25px;
+}
+
+.category-card-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    border: 1px solid #e9edf5;
+    border-radius: 10px;
+    background: #fff;
+    color: #7886a0;
+    font-size: 17px;
+    transition: all 0.2s ease;
+}
+
+.category-card:hover .category-card-arrow {
+    border-color: var(--category-icon-color);
+    background: var(--category-icon-color);
+    color: #fff;
+}
+
+.category-card-content { position: relative; z-index: 1; }
+.category-card-content h3 { margin: 0 0 8px; color: #1d2a45; font-size: 17px; font-weight: 800; line-height: 1.4; overflow-wrap: anywhere; }
+.category-card-content p { margin: 0; color: #8490a5; font-size: 12px; line-height: 1.7; }
+
+.category-card-link {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 20px;
+    color: var(--category-icon-color);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.category-card-link span { transition: transform 0.2s ease; }
+.category-card:hover .category-card-link span { transform: translateX(4px); }
+
+.category-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 28px;
+}
+
+.category-dot {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: none;
+    border-radius: 20px;
+    background: #dce2ef;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.category-dot.active { width: 25px; background: #4968e8; }
+
+.category-card:focus-visible,
+.category-dot:focus-visible,
+.carousel-button:focus-visible {
+    outline: 3px solid #9ab5ff;
+    outline-offset: 3px;
+}
+
+@media (max-width: 950px) {
+    .category-section { padding: 65px 5%; }
+    .category-list { gap: 16px; }
+    .category-card { padding: 19px; }
+    .category-card-content h3 { font-size: 15px; }
+}
+
+@media (max-width: 650px) {
+    .category-section { padding: 52px 18px; }
+    .category-heading { align-items: flex-start; flex-direction: column; gap: 18px; margin-bottom: 25px; }
+    .category-heading h2 { font-size: 30px; letter-spacing: -0.8px; }
+    .category-controls { align-self: flex-end; margin-top: -4px; }
+    .category-list { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+    .category-card { min-height: 200px; padding: 21px; }
+    .category-card-top { margin-bottom: 17px; }
+    .category-card-link { padding-top: 17px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .category-card, .category-card::after, .category-card-arrow,
+    .category-card-link span, .carousel-button, .category-dot { transition: none; }
+}

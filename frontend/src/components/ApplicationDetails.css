@@ -1,0 +1,96 @@
+.application-details-container {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 20px;
+}
+
+.back-button {
+    padding: 10px 16px;
+    margin-bottom: 25px;
+    background: white;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.application-status-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.application-status-banner p {
+    color: #666;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.application-status-banner h2 {
+    margin: 8px 0 0;
+}
+
+.status-badge {
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.status-badge.accepted {
+    color: #166534;
+    background: #dcfce7;
+}
+
+.status-badge.rejected {
+    color: #991b1b;
+    background: #fee2e2;
+}
+
+.status-badge.pending {
+    color: #92400e;
+    background: #fef3c7;
+}
+
+.details-section {
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    background: white;
+}
+
+.details-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.details-section h3 {
+    margin-bottom: 16px;
+}
+
+.details-section p {
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.details-section a {
+    color: #f83002;
+}
+
+.details-error {
+    color: #b91c1c;
+}
+
+@media (max-width: 600px) {
+    .application-status-banner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

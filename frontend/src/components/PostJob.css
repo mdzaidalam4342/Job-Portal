@@ -1,0 +1,84 @@
+.post-job {
+    min-height: 100vh;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.post-job-box {
+    width: 100%;
+    max-width: 650px;
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.post-job-box h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #222;
+}
+
+.post-job-box p {
+    color: #666;
+    margin: 10px 0 25px;
+}
+
+.post-job-box .company-name {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.post-job-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post-job-box input,
+.post-job-box textarea,
+.post-job-box select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.post-job-box input:focus,
+.post-job-box textarea:focus,
+.post-job-box select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.post-job-box textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.post-job-box button {
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.post-job-box button:hover {
+    background: #1d4ed8;
+}
+
+.post-job-box button:disabled {
+    background: #999;
+    cursor: not-allowed;
+}

@@ -1,0 +1,162 @@
+
+.latest-job-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 295px;
+    padding: 23px;
+    box-sizing: border-box;
+    border: 1px solid #e7ecf5;
+    border-radius: 19px;
+    background: #fff;
+    box-shadow: 0 6px 22px rgba(25, 45, 90, 0.045);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.latest-job-card:hover {
+    transform: translateY(-5px);
+    border-color: #cbd8ff;
+    box-shadow: 0 18px 38px rgba(45, 72, 140, 0.11);
+}
+
+.latest-job-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+
+.latest-job-company { display: flex; align-items: center; gap: 12px; min-width: 0; }
+
+.latest-job-logo {
+    display: block;
+    width: 49px;
+    height: 49px;
+    flex-shrink: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #e8edf5;
+    border-radius: 13px;
+    background: #fff;
+    object-fit: contain;
+}
+
+.latest-job-logo-fallback {
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e8efff, #eee9ff);
+    border-color: #e1e6ff;
+    color: #4a55ce;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.latest-job-company-text { min-width: 0; }
+.latest-job-company-text h3 { margin: 0 0 5px; color: #24314b; font-size: 13px; font-weight: 750; overflow-wrap: anywhere; }
+.latest-job-company-text span { color: #8994a8; font-size: 11px; }
+
+.latest-job-type {
+    flex-shrink: 0;
+    max-width: 45%;
+    padding: 7px 9px;
+    border: 1px solid #dce8ff;
+    border-radius: 8px;
+    background: #eff5ff;
+    color: #3563c9;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.latest-job-details { margin-top: 23px; }
+.latest-job-details h2 { margin: 0 0 11px; color: #17233e; font-size: 19px; font-weight: 800; line-height: 1.4; letter-spacing: -0.35px; overflow-wrap: anywhere; }
+
+.latest-job-description {
+    margin: 0;
+    color: #78849a;
+    font-size: 12px;
+    line-height: 1.8;
+    max-height: 64.8px;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+}
+
+.latest-job-tags { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 19px; }
+
+.latest-job-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 10px;
+    border: 1px solid #edf0f6;
+    border-radius: 8px;
+    background: #f8faff;
+    color: #5d6a83;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.latest-job-tag > span { color: #526fe0; font-weight: 800; }
+
+.latest-job-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: auto;
+    padding-top: 19px;
+}
+
+.latest-job-location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+    margin: 0;
+    color: #77839a;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+
+.latest-job-location > span { color: #6175d8; font-size: 18px; }
+
+.latest-job-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-shrink: 0;
+    padding: 10px 13px;
+    border: 1px solid #e0e7ff;
+    border-radius: 9px;
+    background: #f0f4ff;
+    color: #315dd0;
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 750;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.latest-job-button:hover {
+    transform: translateY(-1px);
+    border-color: #3563e9;
+    background: linear-gradient(135deg, #356ff0, #594be5);
+    color: #fff;
+}
+
+.latest-job-button:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+@media (max-width: 1000px) {
+    .latest-job-card { padding: 20px; }
+}
+
+@media (max-width: 480px) {
+    .latest-job-card { min-height: 0; padding: 19px; border-radius: 16px; }
+    .latest-job-details h2 { font-size: 18px; }
+    .latest-job-card-bottom { align-items: flex-start; flex-direction: column; }
+    .latest-job-button { width: 100%; padding: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .latest-job-card, .latest-job-button { transition: none; }
+}
